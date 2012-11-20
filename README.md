@@ -1,4 +1,3 @@
-
 Example
 =======
 
@@ -23,22 +22,22 @@ Install
 
  - Install the bindings
 
-       $ make
-       $ sudo make install
+         $ make
+         $ sudo make install
 
 Install the socialshareprivacy-plugin
 =====================================
 
  - Download and extract the socialshareprivacy plugin
 
-       $ wget http://www.heise.de/extras/socialshareprivacy/jquery.socialshareprivacy.tar.gz
-       $ tar xf jquery.socialshareprivacy.tar.gz
+         $ wget http://www.heise.de/extras/socialshareprivacy/jquery.socialshareprivacy.tar.gz
+         $ tar xf jquery.socialshareprivacy.tar.gz
 
  - Apply replace_entities.diff
 
-       $ patch socialshareprivacy/jquery.socialshareprivacy.js < replace_entities.diff
+         $ patch socialshareprivacy/jquery.socialshareprivacy.js < replace_entities.diff
 
  - Move, copy or link
-     - socialshareprivacy/jquery.socialshareprivacy.js
-     - socialshareprivacy/socialshareprivacy
+     - `socialshareprivacy/jquery.socialshareprivacy.js`
+     - `socialshareprivacy/socialshareprivacy`
    to your static directory
