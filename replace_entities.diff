@@ -1,0 +1,48 @@
+20c20
+< 	 */ 
+---
+> 	 */
+40c40
+<     
+---
+> 
+89c89
+<                     'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Facebook senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
+---
+>                     'txt_info'          : '2 Klicks f&#252;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&#246;nnen Ihre Empfehlung an Facebook senden. Schon beim Aktivieren werden Daten an Dritte &#252;bertragen &#8211; siehe <em>i</em>.',
+97c97
+<                 }, 
+---
+>                 },
+99c99
+<                     'status'            : 'on', 
+---
+>                     'status'            : 'on',
+101c101
+<                     'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Twitter senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
+---
+>                     'txt_info'          : '2 Klicks f&#252;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&#246;nnen Ihre Empfehlung an Twitter senden. Schon beim Aktivieren werden Daten an Dritte &#252;bertragen &#8211; siehe <em>i</em>.',
+106c106
+<                     'referrer_track'    : '', 
+---
+>                     'referrer_track'    : '',
+113c113
+<                     'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Google+ senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
+---
+>                     'txt_info'          : '2 Klicks f&#252;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&#246;nnen Ihre Empfehlung an Google+ senden. Schon beim Aktivieren werden Daten an Dritte &#252;bertragen &#8211; siehe <em>i</em>.',
+123,124c123,124
+<             'txt_help'          : 'Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA &uuml;bertragen und unter Umst&auml;nden auch dort gespeichert. N&auml;heres erfahren Sie durch einen Klick auf das <em>i</em>.',
+<             'settings_perma'    : 'Dauerhaft aktivieren und Daten&uuml;ber&shy;tragung zustimmen:',
+---
+>             'txt_help'          : 'Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA &#252;bertragen und unter Umst&#228;nden auch dort gespeichert. N&#228;heres erfahren Sie durch einen Klick auf das <em>i</em>.',
+>             'settings_perma'    : 'Dauerhaft aktivieren und Daten&#252;ber&#173;tragung zustimmen:',
+229c229
+<                 
+---
+> 
+341c341
+<                 }); 
+---
+>                 });
+377d376
+< 

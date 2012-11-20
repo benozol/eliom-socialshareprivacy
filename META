@@ -1,0 +1,13 @@
+version = "0.1"
+description = "Bindings to the socialshareprivacy-plugin"
+package "server" (
+  directory = "server"
+  requires = "eliom.server"
+  archive(byte) = "socialshareprivacy.cma"
+  archive(native) = "socialshareprivacy.cmxa socialshareprivacy.a"
+)
+package "client" (
+  directory = "client"
+  requires = "oquery,eliom.client"
+  archive(byte) = "socialshareprivacy.cma"
+)
