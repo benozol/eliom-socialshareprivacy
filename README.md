@@ -1,16 +1,14 @@
+
+This project provides [Eliom](http://ocsigen.org/eliom) bindings to the [socialshareprivacy-plugin](http://www.heise.de/extras/socialshareprivacy/).
+
 Example
 =======
 
-With Eliom_tools.F.html (manages the required JavaScript files)
-
-
-    let share =
-      let open Socialshareprivacy in
-      elt ~settings:(settings ~services:[facebook ~status:false ()] ()) ()
-    in
-    Lwt.return
-      (Eliom_tools.F.html ~title:""
-         (Html5.F.body [share]))
+    My_app.register ~service
+      (fun _ _ ->
+         Lwt.return
+           (Eliom_tools.F.html ~title:""
+             (Html5.F.body [Socialshareprivacy.elt ()]))
 
 Requirements
 ============
