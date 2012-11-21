@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Socialshareprivacy" rel="Chapter" href="Socialshareprivacy.html"><link title="Service settings" rel="Section" href="#2_Servicesettings">
+<link title="Creation of socialshareprivacy" rel="Section" href="#2_Creationofsocialshareprivacy">
+<link title="Necessary files" rel="Section" href="#2_Necessaryfiles">
+<link title="Linking" rel="Section" href="#2_Linking">
+<title>Socialshareprivacy</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Socialshareprivacy.html">Socialshareprivacy</a></h1>
+<pre><span class="keyword">module</span> Socialshareprivacy: <code class="code">sig</code> <a href="Socialshareprivacy.html">..</a> <code class="code">end</code></pre><div class="info">
+This module provides bindings to the socialshareprivacy plugin of jQuery.<br>
+</div>
+<hr width="100%">
+<br>
+This module provides bindings to the socialshareprivacy plugin of jQuery.<br>
+<br>
+<h2 id="2_Servicesettings">Service settings</h2><br>
+<pre><span id="TYPEfacebook_setting"><span class="keyword">type</span> <code class="type"></code>facebook_setting</span> </pre>
+
+<pre><span id="TYPEtwitter_setting"><span class="keyword">type</span> <code class="type"></code>twitter_setting</span> </pre>
+
+<pre><span id="TYPEgplus_setting"><span class="keyword">type</span> <code class="type"></code>gplus_setting</span> </pre>
+
+<pre><span id="VALfacebook"><span class="keyword">val</span> facebook</span> : <code class="type">?status:bool -><br>       ?dummy_img:string list -><br>       ?txt_info:string -><br>       ?perma_option:bool -><br>       ?language:string -> unit -> <a href="Socialshareprivacy.html#TYPEfacebook_setting">facebook_setting</a></code></pre><pre><span id="VALtwitter"><span class="keyword">val</span> twitter</span> : <code class="type">?status:bool -><br>       ?dummy_img:string list -><br>       ?txt_info:string -><br>       ?perma_option:bool -><br>       ?language:string -> unit -> <a href="Socialshareprivacy.html#TYPEtwitter_setting">twitter_setting</a></code></pre><pre><span id="VALgplus"><span class="keyword">val</span> gplus</span> : <code class="type">?status:bool -><br>       ?dummy_img:string list -><br>       ?txt_info:string -><br>       ?perma_option:bool -><br>       ?language:string -> unit -> <a href="Socialshareprivacy.html#TYPEgplus_setting">gplus_setting</a></code></pre><br>
+<h2 id="2_Creationofsocialshareprivacy">Creation of socialshareprivacy</h2><br>
+<pre><span id="VALelt"><span class="keyword">val</span> elt</span> : <code class="type">?facebook:<a href="Socialshareprivacy.html#TYPEfacebook_setting">facebook_setting</a> -><br>       ?twitter:<a href="Socialshareprivacy.html#TYPEtwitter_setting">twitter_setting</a> -><br>       ?gplus:<a href="Socialshareprivacy.html#TYPEgplus_setting">gplus_setting</a> -><br>       ?info_link:string -><br>       ?txt_help:string -><br>       ?settings_perma:string -><br>       ?css_path:string list -><br>       ?uri:string -> unit -> [> Html5_types.div ] Eliom_content.Html5.elt</code></pre><div class="info">
+Creation of an Eliom element containing the plugin<br>
+</div>
+<pre><span id="VALapply"><span class="keyword">val</span> apply</span> : <code class="type">?facebook:<a href="Socialshareprivacy.html#TYPEfacebook_setting">facebook_setting</a> -><br>       ?twitter:<a href="Socialshareprivacy.html#TYPEtwitter_setting">twitter_setting</a> -><br>       ?gplus:<a href="Socialshareprivacy.html#TYPEgplus_setting">gplus_setting</a> -><br>       ?info_link:string -><br>       ?txt_help:string -><br>       ?settings_perma:string -><br>       ?css_path:string list -> ?uri:string -> 'a Eliom_content.Html5.elt -> unit</code></pre><div class="info">
+Applying the socialshareprivacy-plugin to an Eliom element<br>
+</div>
+<br>
+<h2 id="2_Necessaryfiles">Necessary files</h2><br>
+<pre><span id="VALjs_files"><span class="keyword">val</span> js_files</span> : <code class="type">unit -> string list list</code></pre><div class="info">
+The list of external JavaScript necessary for the socialshareprivacy-plugin.<br>
+</div>
+<br>
+<h2 id="2_Linking">Linking</h2><br>
+<pre><span id="VAL_link"><span class="keyword">val</span> _link</span> : <code class="type">unit</code></pre><div class="info">
+Client-applications which don't use <code class="code">socialshareprivacy.client</code>
+      directly (e.g. only <a href="Socialshareprivacy.html#VALelt"><code class="code">Socialshareprivacy.elt</code></a> on the server)
+      must refer to this value (or anything) to ensure that OCaml
+      links the library.<br>
+</div>
+</body></html>

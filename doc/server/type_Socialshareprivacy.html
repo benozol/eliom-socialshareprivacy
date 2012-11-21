@@ -1,0 +1,45 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Socialshareprivacy" rel="Chapter" href="Socialshareprivacy.html"><title>Socialshareprivacy</title>
+</head>
+<body>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;facebook_setting<br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;twitter_setting<br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;gplus_setting<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;facebook&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?status:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?dummy_img:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?txt_info:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?perma_option:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?language:string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Socialshareprivacy</span>.facebook_setting<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;twitter&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?status:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?dummy_img:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?txt_info:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?perma_option:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?language:string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Socialshareprivacy</span>.twitter_setting<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;gplus&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?status:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?dummy_img:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?txt_info:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?perma_option:bool&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?language:string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Socialshareprivacy</span>.gplus_setting<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;elt&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?facebook:<span class="constructor">Socialshareprivacy</span>.facebook_setting&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?twitter:<span class="constructor">Socialshareprivacy</span>.twitter_setting&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?gplus:<span class="constructor">Socialshareprivacy</span>.gplus_setting&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?info_link:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?txt_help:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?settings_perma:string&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?css_path:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;?uri:string&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;[&gt;&nbsp;<span class="constructor">Html5_types</span>.div&nbsp;]&nbsp;<span class="constructor">Eliom_content</span>.<span class="constructor">Html5</span>.elt<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;js_files&nbsp;:&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;string&nbsp;list&nbsp;list<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;set_js_files&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;?jquery:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;?socialshareprivacy:string&nbsp;list&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;unit<br>
+<span class="keyword">end</span></code></body></html>
