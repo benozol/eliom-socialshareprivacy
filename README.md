@@ -1,5 +1,6 @@
 
-This project provides [Eliom](http://ocsigen.org/eliom) bindings to the [socialshareprivacy-plugin](http://www.heise.de/extras/socialshareprivacy/).
+This project provides [Eliom](http://ocsigen.org/eliom) bindings to the
+[socialshareprivacy-plugin](http://www.heise.de/extras/socialshareprivacy/).
 
 Example
 =======
@@ -8,7 +9,12 @@ Example
       (fun _ _ ->
          Lwt.return
            (Eliom_tools.F.html ~title:""
-             (Html5.F.body [Socialshareprivacy.elt ()]))
+             (Html5.F.body [
+                Socialshareprivacy.elt ~uri:"http://ocsigen.org" ();
+              ])))
+
+If your are not using `Eliom_tools.F.html`, you must add the
+JavaScript-links to `Socialshareprivacy.get_js_files ()` manually.
 
 Requirements
 ============
