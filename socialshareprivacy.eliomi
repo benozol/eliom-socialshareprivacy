@@ -1,3 +1,4 @@
+(** This module provides bindings to the socialshareprivacy plugin of jQuery. *)
 
 {shared{
 
@@ -22,8 +23,6 @@
 }}
 
 {shared{
-
-  type settings
 
   (** {2 Creation of socialshareprivacy} *)
 
@@ -65,12 +64,14 @@
   val set_js_files : ?jquery:string list -> ?socialshareprivacy:string list -> unit -> unit
 }}
 
+
 {client{
 
   (** {2 Linking} *)
 
-  (** Client-applications which don't use socialshareprivacy.client
-      directly (only {!Socialshareprivacy.elt} on the server) must refer to
-      this value (or anything) to ensure that OCaml links the library. *)
+  (** Client-applications which don't use [socialshareprivacy.client]
+      directly (e.g. only {!Socialshareprivacy.elt} on the server)
+      must refer to this value (or anything) to ensure that OCaml
+      links the library. *)
   val _link : unit
 }}
