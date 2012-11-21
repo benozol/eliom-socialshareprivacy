@@ -1,6 +1,9 @@
-
 This project provides [Eliom](http://ocsigen.org/eliom) bindings to the
 [socialshareprivacy-plugin](http://www.heise.de/extras/socialshareprivacy/).
+
+See the API documentation for
+[server](http://benozol.github.com/socialshareprivacy-eliom/doc/server/index.html) and
+[client](http://benozol.github.com/socialshareprivacy-eliom/doc/client/index.html).
 
 Example
 =======
