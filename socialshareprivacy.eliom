@@ -8,6 +8,7 @@
     txt_info : string option ;
     perma_option : bool option ;
     language : string option ;
+    action : string option ;
   }
   type facebook_setting = service_setting
   type twitter_setting = service_setting
@@ -27,13 +28,13 @@
      you click it. You can send your recommendation afterwards. Data may \
      already be sent to third-parties when activated. See <em>i</em>."
   let facebook ?status ?(dummy_img=["socialshareprivacy";"images";"dummy_facebook_en.png"])
-      ?(txt_info=txt_info) ?perma_option ?(language="en_US") () =
+      ?(txt_info=txt_info) ?perma_option ?(language="en_US") ?action () =
     { status ; dummy_img = Some dummy_img ; txt_info = Some txt_info ;
-      perma_option ; language = Some language }
+      perma_option ; language = Some language ; action }
   let twitter ?status ?dummy_img ?(txt_info=txt_info) ?perma_option ?language () =
-    { status ; dummy_img ; txt_info = Some txt_info ; perma_option ; language }
+    { status ; dummy_img ; txt_info = Some txt_info ; perma_option ; language ; action = None }
   let gplus ?status ?dummy_img ?(txt_info=txt_info) ?perma_option ?(language="en") () =
-    { status ; dummy_img ; txt_info = Some txt_info ; perma_option ; language = Some language }
+    { status ; dummy_img ; txt_info = Some txt_info ; perma_option ; language = Some language ; action = None }
   let txt_help =
     "If you click one of these buttons, information will be sent to Facebook, Twitter, or Google in the U.S.A. where they will possibly be stored."
   let settings_perma =

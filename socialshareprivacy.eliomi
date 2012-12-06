@@ -9,7 +9,7 @@
   type gplus_setting
 
   val facebook : ?status:bool -> ?dummy_img:string list ->
-    ?txt_info:string -> ?perma_option:bool -> ?language:string ->
+    ?txt_info:string -> ?perma_option:bool -> ?language:string -> ?action:string ->
     unit -> facebook_setting
 
   val twitter : ?status:bool -> ?dummy_img:string list ->
