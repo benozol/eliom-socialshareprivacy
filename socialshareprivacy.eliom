@@ -23,7 +23,9 @@
     uri : string option ;
   }
   let txt_info =
-    "Click twice to protect your privacy: The button won't be activated until you click it. After clicking you can send your recommendation. Data may already be sent to third-parties when activated. See <em>i</em>."
+    "Click twice to protect your privacy: This button won't be activated until \
+     you click it. You can send your recommendation afterwards. Data may \
+     already be sent to third-parties when activated. See <em>i</em>."
   let facebook ?status ?(dummy_img=["socialshareprivacy";"images";"dummy_facebook_en.png"])
       ?(txt_info=txt_info) ?perma_option ?(language="en_US") () =
     { status ; dummy_img = Some dummy_img ; txt_info = Some txt_info ;
